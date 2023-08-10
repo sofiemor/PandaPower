@@ -1,0 +1,10 @@
+<div class="ui card">
+  <button *ngIf="!isSaved" class="ui labeled icon button" (click)="saveCase()">
+    <i class="save icon"></i>
+    <span class="test">Save Case</span>
+  </button>
+  <button *ngIf="isSaved" class="ui labeled icon button" (click)="home()">
+    <i class="home icon"></i>
+    <span class="test">Return to Home</span>
+  </button>
+</div>

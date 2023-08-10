@@ -1,0 +1,47 @@
+<div class="wrap">
+  <div class="ui container">
+    <h1>Sign In</h1>
+  
+    <div class="ui large form">
+      <div class="field">
+        <div class="field">
+          <div class="ui left icon input">
+            <i class="user icon"></i>
+  
+            <input type="text" name="email" placeholder="E-mail address" />
+          </div>
+        </div>
+  
+        <div class="field">
+          <div class="ui left icon input">
+            <i class="lock icon"></i>
+  
+            <input type="password" name="password" placeholder="Password" />
+          </div>
+        </div>
+  
+        <div class="style">
+          <div class="field">
+            <div class="ui checkbox">
+              <input type="checkbox" name="example" />
+  
+              <label>Remember me</label>
+            </div>
+          </div>
+  
+          <div class="field">
+            <a routerLink="/forgot">forgot password?</a>
+          </div>
+        </div>
+          <div class="field">
+            <p>Don't have an account? <a routerLink="/signup">Sign Up</a></p>
+          </div>
+          <br/>
+        <div class="ui submit button" routerLink="/home">Sign In</div>
+      </div>
+    </div>
+
+  </div>
+  <app-foot></app-foot>
+</div>
+

@@ -1,0 +1,117 @@
+.first {
+    background-color: whitesmoke;
+} 
+th, td {
+  border: 1px solid #ccc; /* Add a border around the table header and table data cells */
+  padding: 8px; /* Add padding to improve readability */
+}
+
+.thous {
+  width: 180px;
+}
+
+
+table {
+  width: 1000px;
+  /* background-color: green; */
+  border-collapse: collapse; /* Combine borders of adjacent cells */
+  border: 1px solid #ccc; /* Add a border around the table */
+}
+
+.allTabes {
+  /* background-color: blue; */
+  width: 100%;
+  /* width: 2000px; */
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.bold {
+  font-weight: bold;
+  font-size: 14px;
+}
+
+.wra {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  /* background-color: red; */
+}
+
+.bothTot {
+  /* background-color: blue; */
+  width: 1000px;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.last {
+  border: 1px solid white;
+}
+
+.last2 {
+  border-bottom: 1px solid white;
+  text-align: right;
+  font-weight: bold;
+}
+
+.tot {
+  border: 1px solid #ccc;
+  padding: 5px;
+  padding-left: 8px;
+  width: 197.4px;
+  font-weight: bolder;
+  /* border-radius: 5px; */
+}
+
+.tot1 {
+  border: 1px solid #ccc;
+  padding: 5px;
+  padding-left: 8px;
+  width: 119.8px;
+  /* background-color: yellow; */
+  font-weight: bolder;
+}
+
+
+
+
+
+  /* OLD */
+
+  /* .first {
+    background-color: whitesmoke;
+} 
+th, td {
+  border: 1px solid #ccc; /* Add a border around the table header and table data cells */
+  /* padding: 8px; Add padding to improve readability */
+/* } */
+
+/* .whole { */
+  /* width: fit-content; */
+  /* background-color: purple; */
+/* } */
+
+
+/* table { */
+  /* width: 500px; */
+  /* background-color: green; */
+  /* border-collapse: collapse; Combine borders of adjacent cells */
+  /* border: 1px solid #ccc; Add a border around the table */
+/* } */
+
+  /* .allTabes { */
+    /* background-color: blue; */
+    /* width: 90%; */
+    /* display: flex; */
+    /* justify-content: space-between; */
+    /* flex-wrap: wrap; */
+  /* } */
+
+  /* .wrap{ */
+    /* width: 100%; */
+    /* background-color: yellow; */
+    /* display: flex; */
+    /* justify-content: center; */
+  /* } */

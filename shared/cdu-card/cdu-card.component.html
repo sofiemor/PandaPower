@@ -1,0 +1,24 @@
+<div class="wrap">
+    <div class="header">
+        <p class="title">CDU Utilization</p>
+        <p class="explain">These are the projected CDU utilization rates for the selected refineries.</p>
+        <br/>
+    </div>
+
+    <div class="cdus">
+        <div class="name" *ngFor="let item of refAndCDU">
+          <div class="refinery">
+            {{ item[0] }} 
+            <div class="pie">
+              <br/>
+              <app-cdu-chart 
+                [refinery]="item[0]" 
+                [cduUtil]="item[1]" 
+              ></app-cdu-chart>
+            </div>
+          </div>
+        </div>
+      </div>
+    
+    <br/>
+</div>

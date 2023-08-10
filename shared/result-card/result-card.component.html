@@ -1,0 +1,19 @@
+<div class="wrap">
+  <div class="center">
+    <p class="title height">{{ title }}</p>
+    <p class="number" *ngIf="title === 'Total Minimum Cost'">{{ number | currency }}</p>
+    <p class="number" *ngIf="title === 'Total Number of Barrels'">{{ number | number: '1.0' }}</p>
+    <p class="smaller units">{{ units }}</p>
+  </div>
+
+  <div class="par">
+    <ng-content select="p" class="smaller"></ng-content>
+    <p class="smaller">{{ description }}</p>
+  </div>
+
+  <br />
+
+  <div>
+    <ng-content></ng-content>
+  </div>
+</div>

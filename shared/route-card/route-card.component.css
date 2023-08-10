@@ -1,0 +1,33 @@
+.title {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+/* .explain {
+    font-size: 13px;
+} */
+
+.head {
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.each {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    align-content: center;
+    width: 100%;
+    /* background-color: blue; */
+}
+
+.bold {
+    font-weight: bold;
+}
+
+.text {
+    font-size: 14px;
+}

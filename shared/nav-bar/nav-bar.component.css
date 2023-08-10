@@ -1,0 +1,35 @@
+.container {
+    width: 95%;
+    height: 70px;
+    z-index: 10;
+    /* position: fixed; */
+    /* background-color: #DBE5F1; */
+  }
+
+  .space {
+    width: 1%;
+    /* background-color: red; */
+  }
+
+
+.sign {
+  padding: 10px;
+  margin: 0px;
+  border-radius: 10px;
+  background-color: #dbe5f1;
+  /* border: 1px solid black; */
+}
+
+.username {
+  font-size: 15px;
+}
+
+.stick {
+  position: fixed;
+  width: 100%;
+  top: 0px;
+  background-color: white;
+  border-bottom: 1px solid rgb(245, 245, 245);
+}
+
+/* #DBE5F1 */

@@ -1,0 +1,39 @@
+<div class="wrap">
+    <div class="allTabes" >
+        <div *ngFor="let table of routeTables">
+            <table class="tabe"> 
+                <thead class="first">
+                <tr>
+                    <th>Origin</th>
+                    <th>Destination</th>
+                    <th>Transport Type</th>
+                    <th>Transport Descripton</th>
+                    <th>Crude Oil Type</th>
+                    <th class="thous">Cost (thousands of $)</th>
+                    <th>Number of Barrels</th>
+                </tr>
+                </thead>
+                <tbody>
+                <tr *ngFor="let route of table; let last = last">
+                    <td *ngIf="!last">{{ route.oilField }}</td>
+                    <td *ngIf="!last">{{ route.dest }}</td>
+                    <td *ngIf="!last">{{ route.transportType }}</td>
+                    <td *ngIf="!last">{{ route.transportDesc }}</td>
+                    <td *ngIf="!last">{{ route.oilType }}</td>
+                    <td *ngIf="!last">{{ route.cost | number: '1.2-2'  }}</td>
+                    <td *ngIf="!last">{{ route.numBarrels | number: '1.0' }}</td>
+                    <td *ngIf="last" class="last"></td>
+                    <td *ngIf="last" class="last"></td>
+                    <td *ngIf="last" class="last"></td>
+                    <td *ngIf="last" class="last"></td>
+                    <td *ngIf="last" class="last2">Total:</td>
+                    <td *ngIf="last" class="tot1">{{ this.mins[0] | currency}}</td>
+                    <td *ngIf="last" class="tot">{{ this.mins[1] | number: '1.0'}}</td>
+                </tr>
+                </tbody>
+            </table> 
+        </div>
+    </div>
+</div>
+
+<br/>

@@ -1,0 +1,94 @@
+<div class="background">
+  <app-nav-bar></app-nav-bar>
+  <br />
+  <br />
+  <br />
+  <br />
+
+  <div *ngIf="isSaved" class="ui success message">
+    <i class="close icon"></i>
+    <div class="header">Case Saved.</div>
+  </div>
+
+  <div class="row">
+    <div class="titleCard">
+      <div class="nameCard card">
+        <app-title-card
+          [name]="name"
+          [refineries]="refineries"
+          [crudeType]="crudeType"
+        ></app-title-card>
+        <br />
+        <app-results-actions
+          class="saveButton"
+          [caseObj]="caseObj"
+          (save)="saveCase($event)"
+        ></app-results-actions>
+      </div>
+
+      <div class="notesCard card">
+        <app-notes-card></app-notes-card>
+      </div>
+    </div>
+
+    <div class="smallCard card">
+      <app-result-card title="Total Minimum Cost" 
+        [number]="minCost" 
+      >
+        <p>
+          The total minimum cost of maximizing your selected refineries with
+          Crude
+          <span class="bold">{{ crudeType }}</span> is
+          <span class="bold">{{ minCost | currency }}</span
+          >. The breakdown of minimum costs ($) per refinery is presented below:
+        </p>
+        <app-min-cost-chart
+          [labels]="refineries"
+          [label]="costLabel"
+          [costData]="minCostPerRef"
+        ></app-min-cost-chart>
+      </app-result-card>
+    </div>
+
+    <div class="smallCard card">
+      <app-result-card
+        title="Total Number of Barrels"
+        [number]="'' + numBarrels"
+        [units]="unitsBarrels"
+      >
+        <p>
+          A total of
+          <span class="bold">{{ numBarrels | number : "1.0" }}</span> barrels
+          must be sent to your selected refineries. The breakdown of barrels per
+          refinery is presented below:
+        </p>
+        <br />
+        <app-barrel-chart
+          [labels]="refineries"
+          [prodType]="prodTypeLabels"
+          [gasData]="gasPerRef"
+          [distillateData]="distillatePerRef"
+          [lightEndData]="lightEndPerRef"
+        ></app-barrel-chart>
+      </app-result-card>
+    </div>
+  </div>
+
+  <div class="row top">
+    <div class="wideCard card">
+      <app-route-card [refineries]="refineries"></app-route-card>
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="wideCard card">
+      <app-cdu-card
+        [refineries]="refineries"
+        [cduUtils]="cduUtils"
+        [refAndCDU]="refAndCDU"
+      ></app-cdu-card>
+    </div>
+  </div>
+</div>
+
+<app-foot></app-foot>

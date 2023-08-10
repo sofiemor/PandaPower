@@ -1,0 +1,25 @@
+<div class="wrap">
+  <div>
+    <h2 class="ui header">
+      {{ name }}
+    </h2>
+    <p class="height grey">Minimum Cost Model</p>
+  </div>
+
+  <br />
+
+  <div>
+    <div class="param">Input Parameters:</div>
+    <div class="sub header param">
+      <span class="grey">Refineries:</span>&nbsp;&nbsp;
+      <!-- <span class="bold ref" *ngFor="let ref of refineries">{{ ref }},</span> -->
+      <span class="bold ref" *ngFor="let ref of refineries; let last = last">{{ ref }} <span *ngIf="!last">, </span></span>
+    </div>
+
+    <div class="sub header param">
+      <span class="grey">Crude Oil Type:</span>&nbsp;&nbsp;
+      <span class="bold ref">{{ crudeType }}</span>
+    </div>
+
+  </div>
+</div>

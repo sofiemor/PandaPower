@@ -1,0 +1,13 @@
+/* .dot {
+    height: 100px;
+    width: 100px;
+    background-color: whitesmoke;
+    border-radius: 50%;
+    display: inline-block;
+} */
+
+#divChart{
+    display: block;
+    width: 400px;
+    height: 400px;
+}
